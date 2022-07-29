@@ -1,0 +1,42 @@
+.headerShadow {
+  color: rgba(247, 238, 246, 0.5);
+  text-shadow:
+    0px 0px 0 #63345e,
+    1px 1px 0 #6a3d65,
+    2px 2px 0 #71466c,
+    3px 3px 0 #794f73,
+    4px 4px 0 #80587b,
+    5px 5px 0 #876182,
+    6px 6px 0 #8e6a89,
+    7px 7px 0 #967491,
+    8px 8px 0 #9d7d98,
+    9px 9px 0 #a486a0,
+    10px 10px 0 #ac90a7;
+}
+
+.normalTextShadow {
+  color: rgba(247, 238, 246, 0.8);
+  text-shadow:
+    0px 0px 0 rgb(99, 52, 94),
+    1px 1px 0 #71466c,
+    2px 2px 0 #80587b,
+    3px 3px 0 #8e6a89,
+    4px 4px 0 #9d7d98,
+    5px 5px 0 #ac90a7;
+}
+
+.boxShadow {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e41376, 0 0 30px #e41376, 0 0 40px #e41376, 0 0 55px #e41376;
+  border-radius: 5%;
+  background-color: rgba(99, 52, 94, 0.7);
+}
+
+.boxShadowBlue {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01c8ee, 0 0 30px #01c8ee, 0 0 40px #01c8ee, 0 0 55px #01c8ee;
+  border-radius: 5%;
+  background-color: rgba(99, 52, 94, 0.7);
+}
+
+.sentenceTextShadow {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01c8ee, 0 0 30px #01c8ee, 0 0 40px #01c8ee, 0 0 55px #01c8ee, 0 0 75px #01c8ee;
+}

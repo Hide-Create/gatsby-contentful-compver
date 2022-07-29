@@ -1,15 +1,15 @@
-import * as React from "react"
-
+import React from "react"
 import Layout from "../components/layout"
+
 import Seo from "../components/seo"
 
-const NotFoundPage = () => (
+const NotFound = ({ location }) => (
   <Layout>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Seo pagetitle="ページが見つかりません" pagepath={location.pathname} />
+    <h1 style={{ padding: "20vh 0", textAlign: "center" }}>
+      お探しのページは見つかりませんでした
+    </h1>
   </Layout>
 )
 
-export const Head = () => <Seo title="404: Not Found" />
-
-export default NotFoundPage
+export default NotFound

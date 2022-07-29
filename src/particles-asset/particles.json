@@ -1,0 +1,84 @@
+{
+  "fpsLimit": 60,
+  "fullScreen": {
+    "zIndex": -1
+  },
+  "particles": {
+    "number": {
+      "value": 50
+    },
+    "color": {
+      "value": "#25245C"
+    },
+    "shape": {
+      "type": "polygon"
+    },
+    "stroke":{
+      "width":1,
+      "color": "#000000"
+    },
+    "links": {
+      "enable": "true",
+      "color": {
+        "value": "#159096"
+      },
+      "triangles": {
+        "enable": "true",
+        "frequency": 50,
+        "color": "#000000"
+      }
+    },
+    "size": {
+      "value": { "min": 1, "max": 20 },
+      "animation": {
+        "count": 5,
+        "enable": true,
+        "speed": 10,
+        "sync": true,
+        "startValue": "max"
+      }
+    },
+    "move": {
+      "enable": true,
+      "speed": { "min": 3, "max": 6 },
+      "direction": "none",
+      "straight": true,
+      "outModes": {
+        "top": "bounce-vertical",
+        "bottom": "destroy",
+        "right": "bounce-horizontal",
+        "left": "bounce-horizontal"
+      } 
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onHover": {
+        "enable": true,
+        "mode": "trail",
+        "parallax": {
+          "enable": "true",
+          "force": 100
+        }
+      },
+      "resize": true
+    },
+    "modes": {
+      "remove": {
+        "quantity":2
+      },
+      "connect": {
+        "links": {
+          "enable": "true",
+          "color": "#11A7BB"
+        }
+      }
+    }
+  },
+  "detectRetina": true,
+  "background": {
+    "position": "50% 50%",
+    "repeat": "no-repeat",
+    "size": "cover"
+  }
+}
