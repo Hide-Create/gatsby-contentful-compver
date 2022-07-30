@@ -30,7 +30,7 @@ const Seo = props => {
 
   const imgurl = props.pageimg
     ? `${data.site.siteMetadata.siteUrl}${props.pageimg}`
-    : props.blogimg || `${data.site.siteMetadata.siteUrl}/thumb.jpg`
+    : props.blogimg || `${data.site.siteMetadata.siteUrl}/introduction.jpeg`
   const imgw = props.pageimgw || 1280
   const imgh = props.pageimgh || 640
 
