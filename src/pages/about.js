@@ -41,7 +41,7 @@ const About = ({ location }) => {
                     </p>
                     <ul>
                         <li><FontAwesomeIcon icon={faCheckSquare} />JavaScriptを主としたプログラミングに関する情報</li>
-                        <li><FontAwesomeIcon icon={faCheckSquare} />執筆活動や彫刻、競技ヨーヨー、音楽、デザインなどの趣味の情報</li>
+                        <li><FontAwesomeIcon icon={faCheckSquare} />書評、執筆活動や彫刻、競技ヨーヨー、音楽、デザインなどの趣味の情報</li>
                         <li><FontAwesomeIcon icon={faCheckSquare} />アウトサイダーに関する情報や見解</li>
                     </ul>
                     <h2>

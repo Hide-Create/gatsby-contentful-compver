@@ -8,6 +8,7 @@ module.exports = {
     fbappid: `XXXXXXXXXXXXXXXXXXXXX`,
   },
   plugins: [
+    `gatsby-plugin-twitter`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
