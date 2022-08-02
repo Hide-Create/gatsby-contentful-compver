@@ -40,3 +40,17 @@
 .sentenceTextShadow {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01c8ee, 0 0 30px #01c8ee, 0 0 40px #01c8ee, 0 0 55px #01c8ee, 0 0 75px #01c8ee;
 }
+
+.textAnimation {
+  animation: myAnim 7s ease 0s infinite alternate none;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		text-shadow:#FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
+		transform: scale(1);
+	}
+}

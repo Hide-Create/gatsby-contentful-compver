@@ -83,7 +83,7 @@ export const query = graphql`
           id
           slug
           eyecatch {
-            gatsbyImageData(aspectRatio:1.78)
+            gatsbyImageData(aspectRatio:1.78,height:200)
             description
           }
         }

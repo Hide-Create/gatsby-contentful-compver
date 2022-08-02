@@ -65,7 +65,7 @@ const Home = ({ data }) => {
             <li style={{ "fontSize": "1.2rem" }}><span>→</span>その他日常で触れる様々な事象に関する考察</li>
           </ul>
         </div>
-        <div className="box">
+        <div className="box" style={{"textAlign":"center"}}>
           <h2 className={styles.normalTextShadow}>Recent Posts</h2>
           <div className={`grid ${styles.boxShadowBlue}`}>
             {data.allContentfulBlogPost.edges.map(({ node }) => (
@@ -84,6 +84,11 @@ const Home = ({ data }) => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="cover stack" style={{"minHeight":"70vh","borderTop":"0.1rem solid #fff","borderBottom":"0.1rem solid #fff"}}>
+        <p>画面内を</p>
+        <p className={styles.textAnimation} style={{"fontSize":"2rem"}} >Click or Tap</p>
+        <p>してみてね！</p>
       </div>
       <div className="box">
         <div className="stack" >
@@ -148,7 +153,7 @@ export const query = graphql`
           id
           slug
           eyecatch {
-            gatsbyImageData(aspectRatio:1.78)
+            gatsbyImageData(aspectRatio:1.78,width:200)
             description
           }
         }
