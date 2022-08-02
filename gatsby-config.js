@@ -3,7 +3,7 @@ module.exports = {
     title: `HIDDEN OUTSIDER`,
     description: `Blog site by Kotani Hideaki.`,
     lang:`ja`,
-    siteUrl: `https://62e38ce5d2846957ca1aaf2e--lively-dango-8cf079.netlify.app/`,
+    siteUrl: `https://lively-dango-8cf079.netlify.app/`,
     locale: `ja_JP`,
     fbappid: `XXXXXXXXXXXXXXXXXXXXX`,
   },

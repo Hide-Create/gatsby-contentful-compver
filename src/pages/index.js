@@ -21,7 +21,8 @@ const Home = ({ data }) => {
                   src="../images/introduction.jpeg"
                   alt="自己紹介画像"
                   placeholder="blurred"
-                  aspectRatio={16 / 9}
+                  aspectRatio={16/9}
+                  height={300}
                 />
               </div>
               <h3>Hi! I'm Hideaki Kotani!</h3>

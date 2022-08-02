@@ -31,7 +31,7 @@ const Footer = () => {
           id
           slug
           eyecatch {
-            gatsbyImageData
+            gatsbyImageData(aspectRatio:1.78)
             description
           }
         }
