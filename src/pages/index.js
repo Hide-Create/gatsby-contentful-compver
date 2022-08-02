@@ -21,6 +21,7 @@ const Home = ({ data }) => {
                   src="../images/introduction.jpeg"
                   alt="自己紹介画像"
                   placeholder="blurred"
+                  aspectRatio={16 / 9}
                 />
               </div>
               <h3>Hi! I'm Hideaki Kotani!</h3>
@@ -73,6 +74,7 @@ const Home = ({ data }) => {
                     <GatsbyImage
                       image={node.eyecatch.gatsbyImageData}
                       alt={node.eyecatch.description}
+                      aspectRatio={16 / 9}
                     />
                   </div>
                   <p style={{ "textAlign": "center" }}>{node.title}</p>
@@ -93,6 +95,7 @@ const Home = ({ data }) => {
                   src="../images/siteexample01.png"
                   alt="wordpressサイト"
                   placeholder="blurred"
+                  aspectRatio={16 / 9}
                 />
               </div>
               <p>使用技術</p>
@@ -105,6 +108,7 @@ const Home = ({ data }) => {
                   src="../images/siteexample02.png"
                   alt="TypeScriptWeatherApp"
                   placeholder="blurred"
+                  aspectRatio={16 / 9}
                 />
               </div>
               <p>使用技術</p>
@@ -117,6 +121,7 @@ const Home = ({ data }) => {
                   src="../images/siteexample03.png"
                   alt="TypeScriptWeatherApp"
                   placeholder="blurred"
+                  aspectRatio={16 / 9}
                 />
               </div>
               <p>使用技術</p>
@@ -142,7 +147,7 @@ export const query = graphql`
           id
           slug
           eyecatch {
-            gatsbyImageData
+            gatsbyImageData(aspectRatio:1.78)
             description
           }
         }
