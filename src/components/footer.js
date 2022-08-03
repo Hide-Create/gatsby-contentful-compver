@@ -11,9 +11,9 @@ import {
 import {
     faBook,
     faLaptopCode,
-    faUtensilSpoon,
+    faFileCode,
     faPen,
-    faRoute
+    faG
 } from "@fortawesome/free-solid-svg-icons"
 import { faEye } from "@fortawesome/free-regular-svg-icons"
 
@@ -31,7 +31,7 @@ const Footer = () => {
           id
           slug
           eyecatch {
-            gatsbyImageData(aspectRatio:1.78,width:200)
+            gatsbyImageData(aspectRatio:1.78,width:200,placeholder:BLURRED)
             description
           }
         }
@@ -65,10 +65,10 @@ const Footer = () => {
                         <h2 className={styles.headerShadow}>BLOG CATEGORIES</h2>
                         <Link to="/cat/book review/" ><li style={{ "textAlign": "left" }} ><FontAwesomeIcon icon={faBook} />書評</li></Link>
                         <Link to="/cat/discussion/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faPen} />考察</li></Link>
-                        <Link to="/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faRoute} />日常</li></Link>
                         <Link to="/cat/programming/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faLaptopCode} />プログラミング</li></Link>
+                        <Link to="/cat/gatsby-js/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faG} />Gatsby.JS</li></Link>
+                        <Link to="/cat/css/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faFileCode} />CSS</li></Link>
                         <Link to="/cat/outsider/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faEye} />アウトサイダー</li></Link>
-                        <Link to="/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faUtensilSpoon} />料理</li></Link>
                     </ul>
                 </div>
                 <div className="box">

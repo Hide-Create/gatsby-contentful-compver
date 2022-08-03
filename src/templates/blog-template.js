@@ -19,7 +19,7 @@ const BlogTemp = ({ data, location, pageContext }) => (
             pagedesc="Hidden_Outsiderのブログです"
             pagepath={location.pathname}
         />
-        <section style={{ "marginTop": "7rem" }} >
+        <section>
             <div className="center">
                 <div className="stack">
                     <h2 className={styles.normalTextShadow} style={{ "marginTop": "2rem" }} >RECENT POSTS</h2>
@@ -33,7 +33,7 @@ const BlogTemp = ({ data, location, pageContext }) => (
                                             alt={node.eyecatch.description}
                                         />
                                     </div>
-                                    <p style={{ "textAlign": "center" }}>{node.title}</p>
+                                    <p>{node.title}</p>
                                 </Link>
                             </article>
                         ))}

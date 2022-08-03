@@ -149,6 +149,9 @@ span {
   filter: drop-shadow(5px 5px 3px #eb8cd0);
   border-radius: 5%;
 }
+.frame:hover{
+  filter: hue-rotate(-45deg) brightness(110%);
+}
 
 .with-sidebar {
   display: flex;

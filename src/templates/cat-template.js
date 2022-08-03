@@ -19,7 +19,7 @@ const CatTemp = ({ data, location, pageContext }) => (
             pagedesc={`「${pageContext.catname}」カテゴリーの記事です`}
             pagepath={location.pathname}
         />
-        <section style={{ "marginTop": "7rem" }}>
+        <section>
             <div className="center">
                 <div className="stack">
                     <h2 className={styles.headerShadow} style={{ "marginTop": "2rem" }} >CATEGORY: {pageContext.catname}</h2>
@@ -31,10 +31,9 @@ const CatTemp = ({ data, location, pageContext }) => (
                                         <GatsbyImage
                                             image={node.eyecatch.gatsbyImageData}
                                             alt={node.eyecatch.description}
-                                            style={{ height: "100%" }}
                                         />
                                     </div>
-                                    <h3>{node.title}</h3>
+                                    <p>{node.title}</p>
                                 </Link>
                             </article>
                         ))}
@@ -90,7 +89,7 @@ export const query = graphql`
           id
           slug
           eyecatch {
-            gatsbyImageData(aspectRatio:1.78)
+            gatsbyImageData(aspectRatio:1.78,height:200)
             description
           }
         }

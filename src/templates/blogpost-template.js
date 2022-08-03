@@ -74,7 +74,7 @@ const BlogpostTemp = ({ data, pageContext, location }) => (
                         <ul style={{ "display": "flex" }}>
                             {data.contentfulBlogPost.category.map(cat => (
                                 <li className={cat.categorySlug} key={cat.id}>
-                                    <Link to={`/cat/${cat.categorySlug}/`}>カテゴリー/{cat.category}</Link>
+                                    <Link to={`/cat/${cat.categorySlug}/`}>カテゴリー[{cat.category}]</Link>
                                 </li>
                             ))}
                         </ul>
