@@ -3,7 +3,7 @@ module.exports = {
     title: `HIDDEN OUTSIDER`,
     description: `Blog site by Kotani Hideaki.`,
     lang:`ja`,
-    siteUrl: `https://lively-dango-8cf079.netlify.app/`,
+    siteUrl: `https://lively-dango-8cf079.netlify.app`,
     locale: `ja_JP`,
     fbappid: `XXXXXXXXXXXXXXXXXXXXX`,
   },
@@ -26,7 +26,7 @@ module.exports = {
         fonts: [
           `Major Mono Display`,
         ],
-        display: 'block',
+        display: 'swap',
       },
     },
     {
