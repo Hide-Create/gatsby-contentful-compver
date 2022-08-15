@@ -108,7 +108,7 @@ const Home = ({ data }) => {
               <p>HTML / CSS / jQuey / PHP</p>
             </Link>
             <Link to="https://golden-cascaron-24c733.netlify.app/" target="_blank" rel="noopener noreferrer">
-              <h3>TypeScript weather App</h3>
+              <h3>world weather App</h3>
               <div className="frame">
                 <StaticImage
                   src="../images/siteexample02.png"
