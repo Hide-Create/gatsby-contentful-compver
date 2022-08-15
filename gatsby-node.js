@@ -55,9 +55,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   )
 
-  const blogPostsPerPage = 10 //１ページに表示する記事の数
-  const blogPosts = blogresult.data.allContentfulBlogPost.edges.length //記事の総数
-  const blogPages = Math.ceil(blogPosts / blogPostsPerPage) //記事一覧ページの総数
+  const blogPostsPerPage = 10; //１ページに表示する記事の数
+  const blogPosts = blogresult.data.allContentfulBlogPost.edges.length; //記事の総数
+  const blogPages = Math.ceil(blogPosts / blogPostsPerPage); //記事一覧ページの総数
 
   Array.from({ length: blogPages }).forEach((_, i) => {
     createPage({
