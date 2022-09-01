@@ -118,7 +118,7 @@ export const query = graphql`
         id
       }
       eyecatch {
-        gatsbyImageData
+        gatsbyImageData(height:400)
         description
         file {
           details {

@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className="box">
                     <ul className="stack">
                         <h2 className={styles.headerShadow}>BLOG CATEGORIES</h2>
-                        <Link to="/cat/book review/" ><li style={{ "textAlign": "left" }} ><FontAwesomeIcon icon={faBook} />書評</li></Link>
+                        <Link to="/cat/bookreview/" ><li style={{ "textAlign": "left" }} ><FontAwesomeIcon icon={faBook} />書評</li></Link>
                         <Link to="/cat/discussion/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faPen} />考察</li></Link>
                         <Link to="/cat/programming/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faLaptopCode} />プログラミング</li></Link>
                         <Link to="/cat/gatsby-js/" ><li style={{ "textAlign": "left" }}><FontAwesomeIcon icon={faG} />Gatsby.JS</li></Link>

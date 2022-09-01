@@ -3,7 +3,7 @@
 /* 基本 */
 body {
   font-family: 'Zen Maru Gothic', sans-serif;
-  background-image: linear-gradient(135deg, rgba(99, 52, 94, 0.8), rgba(18, 4, 88, 0.8));
+  background-image: linear-gradient(135deg, rgba(86, 38, 91, 0.8), rgba(18, 4, 88, 0.8));
   color: #fff;
 }
 
@@ -91,6 +91,33 @@ span {
   margin: 1rem;
 }
 
+.yoyoBox {
+  padding: 1rem;
+  margin: 1rem;
+  background: rgb(86, 38, 91);
+  background: linear-gradient(135deg, rgba(86, 38, 91, 0.8) 0%, rgba(65, 21, 89, 1) 38%, rgba(255, 255, 255, 1) 40%, rgba(47, 10, 88, 1) 42%, rgba(18, 4, 88, 1) 100%);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cardBox {
+  padding: 1rem;
+  margin: 1rem;
+  background: black;
+}
+
+.fluffyBox {
+  padding: 1rem;
+  margin: 1rem;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.publishBox {
+  padding: 1rem;
+  margin: 1rem;
+  background: #eb8cd0;
+}
+
 .cover {
   display: flex;
   flex-direction: column;
@@ -149,7 +176,8 @@ span {
   filter: drop-shadow(5px 5px 3px #eb8cd0);
   border-radius: 5%;
 }
-.frame:hover{
+
+.frame:hover {
   filter: hue-rotate(-45deg) brightness(110%);
 }
 
@@ -174,6 +202,48 @@ span {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
+}
+
+.reel {
+  display: flex;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: white black;
+}
+
+.reel::-webkit-scrollbar {
+  height: 2rem;
+}
+
+.reel::-webkit-scrollbar-track {
+  background-color: gray;
+}
+
+.reel::-webkit-scrollbar-thumb {
+  border-radius: 25%;
+  background-color: blue;
+  background-image: linear-gradient(to top, gray 0.3rem,#d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1, gray 1.7rem);
+}
+
+.reel>* {
+  flex: 0 0 25ch;
+}
+
+.reel>*+* {
+  margin-left: 1rem;
+}
+
+.reel.overflowing:not(.no-bar) {
+  padding-bottom: 1rem;
+}
+
+.reel.no-bar {
+  scrollbar-width: none;
+}
+
+.reel.no-bar::-webkit-scrollbar {
+  display: none;
 }
 
 /* トップページ */
