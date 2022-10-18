@@ -56,10 +56,12 @@ const BlogpostTemp = ({ data, pageContext, location }) => (
             pageimgh={data.contentfulBlogPost.eyecatch.file.details.image.height}
         />
         <div className="center" style={{ "marginTop": "7rem" }}>
+            <div className="frontViewBox">
             <GatsbyImage
                 image={data.contentfulBlogPost.eyecatch.gatsbyImageData}
                 alt={data.contentfulBlogPost.eyecatch.description}
             />
+            </div>
         </div>
         <article>
             <div className="center">

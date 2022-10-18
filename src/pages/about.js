@@ -16,13 +16,15 @@ const About = ({ location }) => {
                 pagedesc="小谷英彰のブログサイト/アウトサイダーに関する情報を発信しているサイトです。"
                 pagepath={location.pathname}
             />
-            <div>
+            <div className="frontViewBox">
                 <div classname="stack" style={{ "marginTop": "10rem" }}>
-                    <StaticImage
+                <div className="stack">
+                        <StaticImage
                         src="../images/aboutpage.jpeg"
                         alt="雌阿寒岳頂上付近、挟まった岩"
                         placeholder="blurred"
                     />
+                        </div>
                     <p style={{ "textAlign": "center" }} >雌阿寒岳頂上付近にて。嘘みたいなバランスで挟まっていた岩</p>
                 </div>
             </div>
@@ -30,7 +32,7 @@ const About = ({ location }) => {
                 <h1 className="bar">HIDDEN OUTSIDERについて</h1>
                 <div className="postbody">
                     <p>
-                        当サイトは管理人である小谷英彰のポートフォリオサト兼ブログサイトです。トップページに制作したものを載せています。ブログではプログラミングや趣味に関する情報をまとめています。
+                        当サイトは管理人である小谷英彰のポートフォリオサイト兼ブログサイトです。トップページに制作したものを載せています。ブログではプログラミングや趣味に関する情報をまとめています。
                     </p>
                     <h2>
                         <FontAwesomeIcon icon={faBoxOpen} />

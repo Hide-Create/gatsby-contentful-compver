@@ -18,17 +18,19 @@ const Home = ({ data }) => {
             <div className="stack">
               <div className="frame">
                 <StaticImage
-                  src="../images/introduction.jpeg"
+                  src="../images/myphoto.JPG"
                   alt="自己紹介画像"
                   placeholder="blurred"
-                  aspectRatio={16/9}
+                  aspectRatio={3/4}
                   height={300}
                 />
               </div>
               <h3>Hi! I'm Hideaki Kotani!</h3>
               <p>1999年生まれの人間です。</p>
               <p>一癖も二癖もあるWEBサイトを作るのが好きです。最近はWORDPRESSの他、Gatsby.JS+ヘッドレスCMSの組み合わせにハマっています。それ以外は小説を書いたりスパイスカレーを作ったり石を削ったりヨーヨーしたりしてます。</p>
-              <p>ちなみに画像は札幌の居酒屋で食べた刺身です。魚の種類は忘れました。多分ブリだと思います。美味しかったです。</p>
+              <p>↓進行中プロジェクト↓</p>
+              <p>Next.JS + microCMS + Framer Motion [site]</p>
+              <p>React + Three.JS [interactive animation]</p>
             </div>
           </div>
           <div className="box">

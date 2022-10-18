@@ -90,6 +90,12 @@ span {
   padding: 1rem;
   margin: 1rem;
 }
+.frontViewBox{
+  padding-right: clamp(1rem, -1.182rem + 10.91vw, 7rem);
+  padding-left: clamp(1rem, -1.182rem + 10.91vw, 7rem);
+  margin-right: clamp(1rem, -1.182rem + 10.91vw, 7rem);
+  margin-left: clamp(1rem, -1.182rem + 10.91vw, 7rem);
+}
 
 .yoyoBox {
   padding: 1rem;
