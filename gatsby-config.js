@@ -11,9 +11,12 @@ module.exports = {
     `gatsby-plugin-twitter`,
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId:`G-GRFE5WKDV4`
+        trackingIds:["G-GRFE5WKDV4"],
+        pluginConfig:{
+          head:true,
+        },
       },
     },
     {
