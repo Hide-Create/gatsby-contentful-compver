@@ -11,6 +11,12 @@ module.exports = {
     `gatsby-plugin-twitter`,
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId:`G-GRFE5WKDV4`
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
