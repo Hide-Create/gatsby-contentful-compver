@@ -27,7 +27,7 @@ const Home = ({ data }) => {
               </div>
               <h3>Hi! I'm Hideaki Kotani!</h3>
               <p>1999年生まれの人間です。</p>
-              <p>一癖も二癖もあるWEBサイトを作るのが好きです。最近はWORDPRESSの他、Gatsby.JS+ヘッドレスCMSの組み合わせにハマっています。それ以外は小説を書いたりスパイスカレーを作ったり石を削ったりヨーヨーしたりしてます。</p>
+              <p>一癖も二癖もあるWEBサイトを作るのが好きです。最近はWORDPRESSの他、Gatsby.JS+ヘッドレスCMSの組み合わせにハマっています。2023年は1月から上京しており4月から新卒でソリューションエンジニアとして働きます。</p>
               <p>↓進行中プロジェクト↓</p>
               <p>Next.JS + microCMS + Framer Motion [site]</p>
               <p>React + Three.JS [interactive animation]</p>
