@@ -78,23 +78,23 @@ const CatTemp = ({ data, location, pageContext }) => (
 export const query = graphql`
   query($catid: String!, $skip: Int!, $limit: Int!) {
     allContentfulBlogPost(
-      sort: { order: DESC, fields: publishDate }
-      skip: $skip
-      limit: $limit
-      filter: { category: { elemMatch: { id: { eq: $catid } } } }
-    ) {
-      edges {
-        node {
-          title
-          id
-          slug
-          eyecatch {
-            gatsbyImageData(aspectRatio:1.78,height:200)
-            description
+        sort: {publishDate: DESC}
+        skip: $skip
+        limit: $limit
+        filter: {category: {elemMatch: {id: {eq: $catid}}}}
+      ) {
+        edges {
+          node {
+            title
+            id
+            slug
+            eyecatch {
+              gatsbyImageData(aspectRatio: 1.78, height: 200)
+              description
+            }
           }
         }
       }
-    }
   }
 `
 

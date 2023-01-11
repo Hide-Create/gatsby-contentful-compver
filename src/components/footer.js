@@ -20,23 +20,19 @@ import { faEye } from "@fortawesome/free-regular-svg-icons"
 const Footer = () => {
     const data = useStaticQuery(graphql`
   query {
-    allContentfulBlogPost(
-      sort: { order:DESC, fields: publishDate }
-      skip: 0
-      limit: 3
-    ) {
-      edges {
-        node {
-          title
-          id
-          slug
-          eyecatch {
-            gatsbyImageData(aspectRatio:1.78,width:200,placeholder:BLURRED)
-            description
+    allContentfulBlogPost(sort: {publishDate: DESC}, skip: 0, limit: 3) {
+        edges {
+          node {
+            title
+            id
+            slug
+            eyecatch {
+              gatsbyImageData(aspectRatio: 1.78, width: 200, placeholder: BLURRED)
+              description
+            }
           }
         }
       }
-    }
   }
   `)
     return (

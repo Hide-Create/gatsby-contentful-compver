@@ -72,23 +72,19 @@ const BlogTemp = ({ data, location, pageContext }) => (
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allContentfulBlogPost(
-      sort: { order: DESC, fields: publishDate }
-      skip: $skip
-      limit: $limit
-    ) {
-      edges {
-        node {
-          title
-          id
-          slug
-          eyecatch {
-            gatsbyImageData(aspectRatio:1.78,height:200)
-            description
+    allContentfulBlogPost(sort: {publishDate: DESC}, skip: $skip, limit: $limit) {
+        edges {
+          node {
+            title
+            id
+            slug
+            eyecatch {
+              gatsbyImageData(aspectRatio: 1.78, height: 200)
+              description
+            }
           }
         }
       }
-    }
   }
 `;
 

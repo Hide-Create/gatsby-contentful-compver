@@ -144,18 +144,14 @@ const Home = ({ data }) => {
 
 export const query = graphql`
   query {
-    allContentfulBlogPost(
-      sort: { order: DESC, fields: publishDate }
-      skip: 0
-      limit: 4
-    ) {
+    allContentfulBlogPost(sort: {publishDate: DESC}, skip: 0, limit: 4) {
       edges {
         node {
           title
           id
           slug
           eyecatch {
-            gatsbyImageData(aspectRatio:1.78,width:200)
+            gatsbyImageData(aspectRatio: 1.78, width: 200)
             description
           }
         }
